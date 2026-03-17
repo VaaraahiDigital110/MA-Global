@@ -1,0 +1,153 @@
+/* ── Section ───────────────────────────────────────────────── */
+.partners-section {
+  padding: 32px 20px 36px;
+  background: linear-gradient(180deg, #e8eef6 0%, #f0f4f9 100%);
+}
+
+.partners-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ── Heading ───────────────────────────────────────────────── */
+.partners-heading {
+  font-size: 15px;
+  font-weight: 400;
+  color: #6b7a99;
+  margin-bottom: 22px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.partners-heading strong {
+  font-weight: 700;
+  color: #1a2a4a;
+}
+
+/* ── Brands row ────────────────────────────────────────────── */
+.brands-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 44px;
+  flex-wrap: wrap;
+}
+
+.brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.brand-item:hover { opacity: 1; }
+
+/* ── DELL ──────────────────────────────────────────────────── */
+.brand-dell {
+  font-size: 22px;
+  font-weight: 900;
+  color: #1a6faf;
+  font-family: 'Arial Black', 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+.dell-e {
+  color: #1a6faf;
+}
+
+/* ── HP ────────────────────────────────────────────────────── */
+.brand-hp-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #4a90c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-hp {
+  font-size: 17px;
+  font-weight: 800;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* ── Lenovo ────────────────────────────────────────────────── */
+.brand-lenovo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #50A3CC;
+  font-family: 'Arial', 'Inter', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* ── Cisco ─────────────────────────────────────────────────── */
+.brand-cisco-wrap {
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cisco-dots {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  margin-bottom: 1px;
+}
+
+.cisco-dots span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #1ba0d8;
+  display: inline-block;
+}
+
+/* vary heights to mimic Cisco logo wave */
+.cisco-dots span:nth-child(1)  { height: 6px; }
+.cisco-dots span:nth-child(2)  { height: 9px; }
+.cisco-dots span:nth-child(3)  { height: 11px; }
+.cisco-dots span:nth-child(4)  { height: 9px; }
+.cisco-dots span:nth-child(5)  { height: 6px; }
+.cisco-dots span:nth-child(6)  { height: 6px; }
+.cisco-dots span:nth-child(7)  { height: 9px; }
+.cisco-dots span:nth-child(8)  { height: 11px; }
+.cisco-dots span:nth-child(9)  { height: 9px; }
+.cisco-dots span:nth-child(10) { height: 6px; }
+
+.brand-cisco {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4a5568;
+  letter-spacing: 2px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ── Siemens ───────────────────────────────────────────────── */
+.brand-siemens {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a2a4a;
+  letter-spacing: 2px;
+  font-family: 'Arial', 'Inter', sans-serif;
+}
+
+/* ── Peendal ───────────────────────────────────────────────── */
+.brand-peendal {
+  font-size: 15px;
+  font-weight: 600;
+  color: #7a8aaa;
+  letter-spacing: 1.5px;
+  font-family: 'Arial', 'Inter', sans-serif;
+  border: 1.5px solid #c0c8d8;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  .brands-row { gap: 24px; }
+}

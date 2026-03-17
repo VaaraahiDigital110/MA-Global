@@ -1,0 +1,183 @@
+.pd-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding: 100px 0 60px;
+}
+
+.pd-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Back button */
+.pd-back {
+  background: none;
+  border: none;
+  color: #1565c0;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.pd-back:hover {
+  color: #0d47a1;
+}
+
+/* Top card */
+.pd-top-card {
+  background: #ffffff;
+  border: 1px solid #dde3ed;
+  border-radius: 8px;
+  display: flex;
+  gap: 40px;
+  padding: 32px;
+  margin-bottom: 36px;
+}
+
+.pd-img-box {
+  flex: 0 0 380px;
+  background: #eef2f7;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  overflow: hidden;
+}
+
+.pd-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 280px;
+}
+
+.pd-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.pd-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.pd-desc {
+  font-size: 1rem;
+  color: #5a7da0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pd-divider {
+  border: none;
+  border-top: 1px solid #dde3ed;
+  margin: 4px 0;
+}
+
+.pd-availability {
+  font-size: 1rem;
+  color: #1a1a2e;
+  margin: 0;
+  font-weight: 500;
+}
+
+.pd-stock {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+/* Tabs section */
+.pd-tabs-section {
+  background: #ffffff;
+  border: 1px solid #dde3ed;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pd-tabs {
+  display: flex;
+}
+
+.pd-tab {
+  padding: 14px 36px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  border: 1px solid #dde3ed;
+  border-bottom: none;
+  background: #ffffff;
+  color: #1a1a2e;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pd-tab:first-child {
+  border-left: none;
+}
+
+.pd-tab:hover:not(.pd-tab-active) {
+  background: #eef2f7;
+}
+
+.pd-tab-active {
+  background: #1565c0;
+  color: #ffffff;
+  border-color: #1565c0;
+}
+
+.pd-tab-bar {
+  height: 4px;
+  background: #1a1a2e;
+  width: 100%;
+}
+
+.pd-tab-content {
+  background: #eef2f7;
+  padding: 28px 32px;
+}
+
+.pd-tab-content p {
+  font-size: 0.97rem;
+  color: #4a6a8a;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Not found */
+.pd-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pd-top-card {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .pd-img-box {
+    flex: unset;
+    width: 100%;
+    min-height: 200px;
+  }
+  .pd-tab {
+    padding: 12px 20px;
+    font-size: 0.78rem;
+  }
+}

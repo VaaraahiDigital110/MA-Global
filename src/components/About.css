@@ -1,0 +1,113 @@
+.about-section {
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #eef4fb 0%, #f5f8ff 100%);
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-title-why {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a2e;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title-why .highlight {
+  color: #1976d2;
+}
+
+/* ── 4-column grid ─────────────────────────────────────────── */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.why-card {
+  background: #ffffff;
+  border: 1px solid #e0eaf5;
+  border-radius: 14px;
+  padding: 40px 24px 36px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.25s, transform 0.25s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.why-card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10);
+  transform: translateY(-4px);
+}
+
+/* ── Circular image ─────────────────────────────────────────── */
+.why-img-wrap {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-bottom: 24px;
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover .why-img-wrap {
+  transform: scale(1.06);
+}
+
+.why-img-custom {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* ── Card text ──────────────────────────────────────────────── */
+.why-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+  font-family: 'Poppins', 'Inter', sans-serif;
+  line-height: 1.4;
+}
+
+.why-desc {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.learn-more {
+  color: #1976d2;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.learn-more:hover {
+  color: #1565c0;
+  text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  .why-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .why-grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
+}
