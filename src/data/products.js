@@ -21,7 +21,7 @@ export const products = [
   },
   {
     id: 'servers',
-    img: '/scanners.png',
+    img: '/plotters.png',
     tag: 'Infrastructure',
     title: 'Plotters',
     availability: 'In Stock',
@@ -31,7 +31,7 @@ export const products = [
   },
   {
     id: 'networking-devices',
-    img: '/servers.PNG',
+    img: '/servers.png',
     tag: 'Networking',
     title: 'Servers',
     availability: 'In Stock',
