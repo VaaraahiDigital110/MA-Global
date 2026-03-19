@@ -31,7 +31,7 @@ export const products = [
   },
   {
     id: 'networking-devices',
-    img: '/servers.png',
+    img: '/server.png',
     tag: 'Networking',
     title: 'Servers',
     availability: 'In Stock',
