@@ -33,7 +33,7 @@ const Footer = () => {
             {/* Center — Brand + Contact */}
             <div className="footer-center">
               <div className="footer-logo">
-                <img src="/ma-global-logo.svg" alt="MA Global Logo" className="footer-logo-img" />
+                <img src="/ma-global-logo-new.png" alt="MA Global Logo" className="footer-logo-img" />
               </div>
 
               <div className="footer-contact-item">

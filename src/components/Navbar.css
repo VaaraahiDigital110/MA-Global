@@ -30,6 +30,17 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
+.menu-btn.scrolled {
+  background: #0e2252;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 16px rgba(14, 34, 82, 0.35);
+}
+
+.menu-btn.scrolled:hover {
+  background: #112a6b;
+  box-shadow: 0 6px 20px rgba(14, 34, 82, 0.45);
+}
+
 .menu-btn span {
   display: block;
   width: 100%;

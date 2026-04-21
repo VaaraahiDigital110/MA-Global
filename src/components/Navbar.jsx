@@ -4,10 +4,12 @@ import './Navbar.css';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('home');
+  const [scrolled, setScrolled] = useState(false);
   const menuRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
+      setScrolled(window.scrollY > 60);
       const sections = ['home', 'about', 'products', 'services', 'contact'];
       for (const id of sections) {
         const el = document.getElementById(id);
@@ -55,7 +57,7 @@ const Navbar = () => {
   return (
     <div className="menu-wrapper" ref={menuRef}>
       <button
-        className={`menu-btn ${open ? 'open' : ''}`}
+        className={`menu-btn ${open ? 'open' : ''} ${scrolled ? 'scrolled' : ''}`}
         onClick={() => setOpen(!open)}
         aria-label="Toggle menu"
       >

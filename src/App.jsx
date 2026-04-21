@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Hero from './components/Hero';
-import Partners from './components/Partners';
 import Services from './components/Services';
 import About from './components/About';
 import Products from './components/Products';
@@ -17,8 +16,7 @@ function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Partners />
-        <Services />
+<Services />
         <About />
         <Products />
         <Contact />

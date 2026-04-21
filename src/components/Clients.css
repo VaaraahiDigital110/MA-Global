@@ -43,27 +43,26 @@
 }
 
 .client-logo:hover {
-  border-color: var(--color);
+  border-color: #0056B3;
   transform: translateY(-4px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
-.client-avatar {
-  width: 56px;
-  height: 56px;
-  background: var(--bg);
-  border-radius: 14px;
+.client-img-wrap {
+  width: 120px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.client-avatar span {
-  font-size: 14px;
-  font-weight: 800;
-  color: var(--color);
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.3px;
+.client-img {
+  max-width: 120px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .client-name {
